@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body {
+    color: #fff;
+    font-family: "Open Sans";
+}
+
+/* imagen fondo */
+
+.banner img{
+    width: 100%;
+}
+
+/* estilo nav */
+
+nav {
+    width: 100%;
+    height: 3.5em;
+    background-color: #000;
+
+}
+
+/* estilo menu */
+
+.cont-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    color: #fff;
+}
+.subcont-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.subcont-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.lista ul {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    list-style: none;
+}
+.lista i:hover {
+    background-color: #79FF39;
+}
+.iconos {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* estilos individules de elementos del menu */
+
+.logo {
+    display: flex;
+    justify-content: end;
+    height: 3rem;
+}
+
+.titulo {
+    font-family: "Chewy";
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.lista ul li {
+    font-size: 1.5rem;
+    padding-top: 0.7rem;
+}
+
+.iconos i {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+
+/* seccion galeria */
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+
+}
+.cont-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 70%;
+    height: auto;
+    
+}
+.img img {
+    width: 100%;
+    height: auto;
+}
+.cont-imagenes p {
+    background-color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.c5 {
+    grid-column: 2/4;
+}
+.c4 {
+    grid-row: 2/3;
+}
+
+/* seccion post */
+
+#post {
+    width: 100%;
+    height: auto;
+}
+.cont-post {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    padding: 12em;
+    gap: 4em;
+}
+
+/* columna 1*/
+
+
+.columna-1 {
+    color: black;
+
+}
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+.fila img {
+    width: 100%;
+}
+.caja-2 h3 {
+    color: #526DFF;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding-bottom: 2em;
+}
+.caja-2 p {
+    font-size: 1.5rem;
+} 
+.caja-3 {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: space-between;
+}
+.caja-4 {
+    background-color: #79FF39;
+    width: 100%;
+    height: 0.20rem;
+    margin: 1em;
+}
+
+/*columna 2 */
+
+.columna-2 {
+    color: black;
+}
+.div-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 2em;
+}
+.div-1 img {
+    width: 100%;
+}
+.div-2 h3 {
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 0.5em 0;
+}
+.div-int {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding-bottom: 2em;
+}
+.div-int img {
+    width: 100%;
+}
+.div-int p {
+    font-size: 1.2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+}
+.cont-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-1 {
+    padding: 3em;
+}
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.subtitulo-footer {
+    font-size: 1.5rem;
+    padding: 1em;
+}
+.inputs input{
+   font-size: 1.5em;
+   padding: 0.7em 0;
+   margin: 0;
+   color: #000;
+   width: auto;
+}
+.input-2 {
+    background-color: lightgrey;
+}
+.lista-footer ul {
+    display: flex;
+    list-style: none;
+    padding: 2em;
+}
+.lista-footer ul li {
+    padding-left: 2em;
+    font-size: 2em;
+}
+
+/* responsive */
+
+@media screen and (min-width:360px){
+    
+}
