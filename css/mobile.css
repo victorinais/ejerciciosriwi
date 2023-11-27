@@ -1,0 +1,18 @@
+#proyectos, #sobremi, #contacto {
+    padding: 50px 0;
+}
+#sobremi p, #sobremi h4 {
+    text-align: center;
+}
+
+ .sobremi-row{
+     flex-wrap: wrap;
+ }
+ .sobremi-row-experience, .sobremi-row-me{
+ width: 100%;
+ padding-left: 0px;
+ }
+ #contacto p {
+    font-size: 14px;
+ }
+ 
