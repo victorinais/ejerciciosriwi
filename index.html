@@ -1,96 +1,602 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylePortafolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css" />
-    <title>Portafolio</title>
-</head>
-<body>
-    <header id="mainheader">
-        <nav id="navbar">
-            <div class="container">
-                <a href="#mainheader" class="logo"><i class="fa-solid fa-v fa-4x"></i><i class="fa-solid fa-m fa-4x"></i></a>
-                <ul>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#sobremi">Sobre mi</a></li>
-                    <li><a href="#contacto">contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="showcase">
-            <div class="container">
-                <a href="#proyectos" class="btn btn-outline">Proyectos</a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portafolio VM</title>
+  </head>
+
+  <body id="body" class="light">
+
+    <!-- contenido cabecera -->
+
+    <header>
+      <nav class="navbar shadow p-3 mb-5 rounded fixed-top">
+        <div class="container-fluid">
+          <div class="col-2">
+            <a class="navbar-brand" href="#section-1">
+              <img
+                src="./img/favicon.ico"
+                alt="Logo"
+                width="30"
+                height="25"
+                class="d-inline-block align-text-top"
+              />
+              Victor Marin
+            </a>
+          </div>
+          <div class="col-8">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#section-2">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-3">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-4">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <select class="form-select" aria-label="Default select example" onchange="cambiarTema()" id="tema">
+              <option selected>Tema</option>
+              <option value="1">Claro</option>
+              <option value="2">Oscuro</option>
+            </select>
+          </div>
         </div>
+      </nav>
+
+      <!-- sección bienvenida -->
+
+      <section id="section-1">
+        <div class="col-12 espacio"></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col mt-3 mb-3">
+              <p class="h1 display-2">Bienvenidos a mi Portafolio</p>
+            </div>
+            <div class="row">
+              <div class="col pb-4">
+                <img
+                  src="./img/fondo.jpg"
+                  class="img-fluid border rounded"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="alert alert-primary">
+              <span class="text-center display-5 span"
+                ><i class="fa-solid fa-code"></i> "Si puedes imaginarlo puedes
+                programarlo"</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
-    <section id="proyectos">
-        <div class="container">
-            <h2>PROYECTOS</h2>
-            <div class="slider-frame">
-                <ul>
-                    <li><a href="login.html"><img src="./img/login.jpg" alt=""></a></li>
-                    <li><a href="hoja-de-vida.html"><img src="./img/hoja-de-vida.jpg" alt=""></a></li>
-                    <li><a href="Instagram.html"><img src="./img/instagram.jpg" alt=""></a></li>
-                    <li><a href="Listado-productos.html"><img src="./img/listado-productos.jpg" alt=""></a></li>
-                    <li><a href="crear-producto.html"><img src="./img/crear-producto.jpg" alt=""></a></li>
-                    <li><a href="actualizar-informacion.html"><img src="./img/actualizar-productos.jpg" alt=""></a></li>
-                    <li><a href="eliminar-producto.html"><img src="./img/eliminar-producto.jpg" alt=""></a></li>
-                    <li><a href="./calculadora/index.html"><img src="./img/calculadora.png" alt=""></a></li>
-                    <li><a href="./calculadora vm/index.html"><img src="./img/calculadora-vm.png" alt=""></a></li>
-                    <li><a href="./formulario-con-js/index.html"><img src="./img/formulario.png" alt=""></a></li>
-                </ul>      
-            </div>
+    <!-- contenido principal -->
+
+    <main>
+      <!-- seccion Proyectos -->
+
+      <section id="section-2">
+        <div class="row pt-5">
+          <div class="col-12 text-center mt-5">
+            <p class="h2 display-3">Proyectos</p>
+          </div>
         </div>
-    </section>
-    <section id="sobremi">
-        <div class="container">
-            <h2>SOBRE MI</h2>
-            <div class="sobremi-row">
-                <div class="sobremi-row-experience">
-                    <h4>EXPERIENCIA</h4>
-                    <p class="large">Development riwi 2023</p>
-                    <p class="large">Proxima experiencia</p>
-                    <p class="large">Proxima experiencia</p>   
+        <div class="container py-5 text-center">
+          <div class="row g-4">
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">login</h5>
+                  <p class="card-text">
+                    En este proyecto se creó un login utilizando las siguientes
+                    tecnologías HTML y CSS.
+                  </p>
+                  <a href="./login.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
                 </div>
-                <div class="sobremi-row-me">
-                    <h4>SOBRE MI</h4>
-                    <p>Soy una persona apasionada por el Desarrollo de sotfware, Me encanta la innovación y siempre buscando alcanzar la excelencia en cualquier proyecto que inicie.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Hoja de vida</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una hoja de vida utilizando las
+                    tecnologías HTML y CSS, agregando distintos elementos y dando estilos a los elementos.
+                  </p>
+                  <a href="./hoja-de-vida.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Instagram</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una pagina de instagram usando
+                    tablas en HTML y dandole estilos con CSS.
+                  </p>
+                  <a href="./Instagram.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Listado de Productos</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una pagina de listado de
+                    productos usando tablas en HTML y CSS.
+                  </p>
+                  <a href="./Listado-productos.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Actualizar Producto</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una pagina de actualizar
+                    producto usando tablas en HTML y CSS.
+                  </p>
+                  <a href="./img/proyect-5.png" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Crear Producto</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una pagina de crear producto
+                    usando tablas en HTML y CSS.
+                  </p>
+                  <a href="./crear-producto.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-7.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Eliminar Producto</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una pagina de eliminar producto
+                    usando tablas en HTML y CSS.
+                  </p>
+                  <a href="./eliminar-producto.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-8.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Calculadora 1</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una calculadora usando HTML, CSS
+                    y JavaScript.
+                  </p>
+                  <a href="./calculadora-1.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img src="./img/proyect-9.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Portafolio</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó un portafolio responsivo usando
+                    HTML Y CSS.
+                  </p>
+                  <a href="./portafolio.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-10.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calculadora 2</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una segunda calculadora usando
+                    HTML, CSS y JavaScript.
+                  </p>
+                  <a href="./calculadora-2.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-11.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Formulario</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó un formulario usando HTML y
+                    JavaScript.
+                  </p>
+                  <a href="./formulario.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-12.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Solutions</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una página estática donde se
+                    presentan los servicios que se ofrecen e información sobre
+                    la empresa usando HTML y CSS.
+                  </p>
+                  <a href="./Proyecto Riwi/index.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-13.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pagina KFC</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una página estática de KFC
+                    usando HTML y CSS, también se agregó funcionalidad con
+                    JavaScript.
+                  </p>
+                  <a href="./kfc/index-kfc.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-14.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card con JavaScript</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una card usando JavaScript para
+                    dibujar en el HTML.
+                  </p>
+                  <a href="./carta con js/index.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-15.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una página usando HTML y se le
+                    dieron funcionalidades con JavaScript.
+                  </p>
+                  <a href="./carta con js/index.html" class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card h-100" style="width: 18rem">
+                <img
+                  src="./img/proyect-16.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Estilos</h5>
+                  <p class="card-text">
+                    En este proyecto se realizó una barra de navegación con
+                    estilos hover más mapa y video usando HTML y CSS.
+                  </p>
+                  <a
+                    href="./viernes/index-clase-viernes.html"
+                    class="btn btn-primary"
+                    >Ver Proyecto</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección sobre mi -->
+
+      <section id="section-3">
+        <div class="container pb-5">
+          <div class="row pt-5">
+            <div class="col-12 text-center mt-5">
+              <p class="h2 display-3">Sobre Mi</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 text-center pt-3">
+              <p class="h2 display-5">Tecnologias</p>
+              <div class="row">
+                <div class="card my-2">
+                  <div class="card-header">
+                    <img
+                      src="./img/html-5.png"
+                      alt="Logo"
+                      width="150"
+                      height="150"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">HTML 5</h5>
+                    <p class="card-text">
+                      Tecnología de Maquetado para el desarrollo de páginas web.
                     </p>
+                  </div>
                 </div>
+                <div class="card my-1">
+                  <div class="card-header">
+                    <img
+                      src="./img/css-3.png"
+                      alt="Logo"
+                      width="150"
+                      height="150"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">CSS 3</h5>
+                    <p class="card-text">
+                      Tecnología de estilos para el desarrollo de páginas web.
+                    </p>
+                  </div>
+                </div>
+                <div class="card my-1">
+                  <div class="card-header">
+                    <img
+                      src="./img/js.png"
+                      alt="Logo"
+                      width="150"
+                      height="150"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">
+                      Tecnología de funcionalidad para el desarrollo de páginas
+                      web.
+                    </p>
+                  </div>
+                </div>
+                <div class="card my-1">
+                  <div class="card-header">
+                    <img
+                      src="./img/bootstrap.png"
+                      alt="Logo"
+                      width="150"
+                      height="150"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">
+                      Librería avanzada para el desarrollo de páginas web.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-    <section id="contacto">
-        <div class="container">
-            <h2>CONTACTO</h2>
-            <div class="contacto-row">
-                <div class="contacto-row-icon">
-                    <i class="fa-solid fa-location-dot fa-10x"></i>
-                    <p>Caldas Antioquia</p>
+            <div class="col-6 text-center pt-3">
+              <p class="h2 display-5">Quien soy</p>
+              <div class="row">
+                <div class="card my-2">
+                  <div class="card-header">
+                    <img
+                      src="./img/victor.jpg"
+                      alt="Logo"
+                      width="250"
+                      height="250"
+                      style="border-radius: 50%; border: 1px solid #000"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Victor Marin</h5>
+                    <p class="card-text lead text-start">
+                      “Soy un aprendiz de desarrollo de software, siempre
+                      buscando expandir mis habilidades y conocimientos. Mi
+                      pasión por la tecnología me impulsa a aprender de manera
+                      autodidacta, lo que me permite adaptarme y crecer en este
+                      campo en constante evolución. Mi objetivo es utilizar mi
+                      amor por la tecnología para crear soluciones innovadoras y
+                      efectivas. Aunque todavía estoy en la etapa de
+                      aprendizaje, estoy comprometido con el mejoramiento
+                      continuo y estoy emocionado por las oportunidades que el
+                      futuro puede traer en el mundo del desarrollo de
+                      software.”
+                    </p>
+                  </div>
                 </div>
-                <div class="contacto-row-icon">
-                    <i class="fa-solid fa-envelope fa-10x"></i>
-                    <p>Correo Electronico</p>
+                <div class="card my-1">
+                  <div class="card-header">
+                    <img
+                      src="./img/riwi.webp"
+                      alt="Logo"
+                      width="150"
+                      height="150"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Riwi</h5>
+                    <p class="card-text lead text-start">
+                      “Actualmente, estoy ampliando mis habilidades en
+                      desarrollo de software como estudiante en Riwi. Esta
+                      experiencia me está proporcionando una base sólida en
+                      tecnología y programación, preparándome para futuros
+                      desafíos en el campo.”
+                    </p>
+                  </div>
                 </div>
-                <div class="contacto-row-icon">
-                    <i class="fa-solid fa-mobile-screen fa-10x"></i>
-                    <p>555-555-55-55</p>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <footer id="mainfooter">
-        <div class="container">
-            <a href="#mi-instagram"><i class="fa-brands fa-instagram fa-10x"></i></a>
-            <a href="#mi-instagram"><i class="fa-brands fa-facebook fa-10x"></i></a>
-            <a href="#mi-instagram"><i class="fa-brands fa-github fa-10x"></i></a>
-            <a href="#mi-instagram"><i class="fa-brands fa-linkedin fa-10x"></i></a>
-        </div> 
+      </section>
+
+      <!-- sección Contacto -->
+
+      <section id="section-4">
+        <div class="container pb-5">
+          <div class="row">
+            <div class="col-12 text-center my-5">
+              <p class="h2 display-3">contacto</p>
+            </div>
+          </div>
+          <div class="row gap-3 py-3">
+            <div
+              class="col-3 tarjeta shadow-lg py-4 text-center"
+              style="border-radius: 10px; width: 18em; height: 22em"
+            >
+              <p class="h3 display-6 pb-3">Teléfono</p>
+              <i class="fa-solid fa-mobile fa-10x"></i>
+              <p class="h5 py-4"><a href="https://api.whatsapp.com/send?phone=NUMERO&text=Hola,%20quiero%20más%20información">Contactarme</a></p>
+            </div>
+            <div
+              class="col-6 tarjeta shadow-lg py-4 text-center"
+              style="border-radius: 10px; width: 42em"
+            >
+              <p class="h3 display-6">
+                <i class="fa-solid fa-location-dot"></i> Ubicación
+              </p>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31738.15823790713!2d-75.63334745!3d6.0943169500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1702858840505!5m2!1ses!2sco"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
+            </div>
+            <div
+              class="col-3 tarjeta shadow-lg py-4 text-center d-flex flex-column"
+              style="border-radius: 10px; width: 18em; height: 22em"
+            >
+              <p class="h3 display-6">Correo Electrónico</p>
+              <i class="fa-solid fa-envelope fa-10x"></i>
+              <p class="h5">vicmarin50@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- sección footer -->
+
+    <footer id="footer">
+      <div class="container-fluid text-center py-5">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <i class="fa-brands fa-square-github fa-10x"></i>
+
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <i class="fa-brands fa-linkedin fa-10x"></i>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <i class="fa-brands fa-square-instagram fa-10x"></i>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+            <i class="fa-brands fa-facebook fa-10x"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 pt-5">
+            <p class="h5 text-center">© 2024 Victor Marin. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="./js/script-porboo.js"></script>
+  </body>
 </html>
