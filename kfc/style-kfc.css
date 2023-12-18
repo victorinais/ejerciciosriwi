@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.opciones ol {
+    display: flex;
+    list-style: none;
+    padding: 1.5em;
+}
+
+.opciones ol li {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-left: 1.5em;
+}
+
+.seleccionar {
+    display: flex;
+    justify-content: center;
+}
+
+.select {
+    font-size: 1.5rem;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-transform: capitalize;
+}
+
+.cont-titulo-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu {
+    text-align: start;
+    margin-left: 8em;
+    padding: 2em;
+    text-transform: capitalize;
+}
+
+.filtrar {
+    text-align: end;
+    margin-right: 15em;
+    padding-top: 3.5em;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+}
+
+.cont-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+    gap: 1em;
+    margin: 2em 5em 3em 5em;
+
+}
+
+
+/* theme light */
+.theme-light {
+    background-color: #fff;
+    color: #000;
+}
+
+.theme-light .cajas .img {
+    object-fit: contain;
+}
+
+.theme-light .cajas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #f2f2f2;
+    padding: 1.5em;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    /* width: 25em; */ 
+    height: 35em; 
+    position: relative;
+}
+
+.theme-light .price {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.theme-light .name {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.theme-light .description {
+    color: #000;
+    font-size: 1rem;
+}
+
+.theme-light .cajas p {
+    padding: 0.2em 0;
+}
+
+.theme-light nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f2f2f2;
+}
+
+.theme-light .button {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 1.3rem;
+    background-color: #616161;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top: 82%;
+}
+
+.theme-light .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* theme dark */
+.theme-dark {
+    background-color: #000;
+    color: #c0c0c0;
+}
+
+.theme-dark .cajas .img {
+    object-fit: contain;
+}
+
+.theme-dark .cajas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #616161 ;
+    padding: 1.5em;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    /* width: 25em; */
+    height: 35em;
+    position: relative;
+}
+
+.theme-dark .price {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+}
+
+.theme-dark .name {
+    color: #e0e0e0;
+    font-size: 1.5rem;
+}
+
+.theme-dark .description {
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+.theme-dark .cajas p {
+    padding: 0.2em 0;
+}
+
+.theme-dark nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #616161;
+}
+
+.theme-dark .button {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 1em;
+    padding: 0.5em;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    position: absolute;
+    top: 82%;
+}
+
+.theme-dark .button:hover {
+    background-color: #000;
+    color: #fff;
+}
