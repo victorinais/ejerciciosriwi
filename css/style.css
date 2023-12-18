@@ -99,6 +99,9 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
     color: #eceff1;
 }
+.dark .h5 {
+    color: #eceff1;
+}
 .dark #footer i {
     color: #eceff1;
 }
